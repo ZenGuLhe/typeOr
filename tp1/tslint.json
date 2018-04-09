@@ -1,0 +1,8 @@
+{
+  "rules": {
+    "quotemark": [true, "single"],
+    "semicolon": [true, "always"],
+    "indent": [true, "spaces"]
+  }
+}
+
