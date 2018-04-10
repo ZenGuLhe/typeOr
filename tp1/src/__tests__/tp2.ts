@@ -1,6 +1,6 @@
 import test from 'ava';
 import * as sinon from 'sinon';
-import { displayPeopleAndLength, returnPeopleAndLength } from '../tp2'
+import { displayPeopleAndLength, returnPeopleAndLength } from '../tp2';
 
 const spy = sinon.spy(console, 'log');
 
