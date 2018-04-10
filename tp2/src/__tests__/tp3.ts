@@ -1,8 +1,8 @@
 import test from 'ava';
 import * as sinon from 'sinon';
-import { Album, Music, Musician, JazzMusician, RockStar, display } from '../tp3'
+import {Album, Music, Musician, JazzMusician, RockStar, display, IMusician} from '../tp3';
 
-const spy = sinon.spy(console, "log");
+const spy = sinon.spy(console, 'log');
 
 test('Album properties testing', t => {
     const al = new Album('Kind Of Blue');
@@ -57,8 +57,6 @@ test('RockStar toString method testing', t => {
 
 test('display method testing with musicians', t => {
     const musicians: Musician[] = [new JazzMusician('Miles', 'Davis', 89), new RockStar('Mick', 'Jagger', 72)];
-    const albums: Album[] = [new Album('Kind Of Blue'), new Album('Tutu')];
-
     display(musicians);
 
     t.is(spy.callCount, 2);
